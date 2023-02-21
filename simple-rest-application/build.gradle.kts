@@ -17,10 +17,12 @@ dependencies {
 	developmentOnly("org.springframework.boot:spring-boot-devtools")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 
-	implementation ("org.springframework.boot:spring-boot-starter-data-jpa")
-	runtimeOnly ("org.postgresql:postgresql")
-	compileOnly ("org.projectlombok:lombok")
-	annotationProcessor ("org.projectlombok:lombok")
+	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+	implementation("org.postgresql:postgresql")
+	implementation("org.projectlombok:lombok")
+	//implementation("javax.xml.bind:jaxb-api")
+	implementation("com.sun.xml.bind:jaxb-core")
+	implementation("com.sun.xml.bind:jaxb-impl")
 }
 
 tasks.withType<Test> {
